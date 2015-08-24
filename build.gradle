@@ -8,6 +8,7 @@ buildscript {
 }
 
 repositories {
+    maven { url 'http://maven.saturnup.com' }
     mavenCentral()
 }
 
@@ -28,4 +29,8 @@ android {
             proguardFile getDefaultProguardFile('proguard-android.txt')
         }
     }
+}
+
+dependencies {
+    compile 'com.saturnup:sdk:0.1.0'
 }
