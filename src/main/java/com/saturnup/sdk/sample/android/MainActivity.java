@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.view.View;
 
+import com.saturnup.sdk.Saturnup;
+
 public class MainActivity extends Activity {
 
     @Override
@@ -23,7 +25,8 @@ public class MainActivity extends Activity {
     }
 
     private void showAd() {
-
+        Saturnup.questionAd(this)
+            .show();
     }
 
 }

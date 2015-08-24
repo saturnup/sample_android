@@ -46,3 +46,8 @@ public class MyApplication extends Application {
 }
 
 ```
+
+Show an advertisement:
+```Java
+Saturnup.questionAd(context).show();
+```
