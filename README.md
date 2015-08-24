@@ -24,5 +24,10 @@ Add the INTERNET permission to your AndroidManifest.xml, inside the `<manifest>`
 tag but outside the `<application>` tag:
 
 ```XML
-    <uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.INTERNET" />
+```
+
+Register `QuestionActivity` as an activity inside your `<application>` tag:
+```XML
+<activity android:name="com.saturnup.sdk.question.QuestionAdActivity" />
 ```
