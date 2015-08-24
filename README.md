@@ -31,3 +31,18 @@ Register `QuestionActivity` as an activity inside your `<application>` tag:
 ```XML
 <activity android:name="com.saturnup.sdk.question.QuestionAdActivity" />
 ```
+
+Initialize the Saturnup SDK before you show any ads. This is most easily done in
+your application class:
+
+```Java
+public class MyApplication extends Application {
+
+    @Override
+    public void onCreate() {
+        Saturnup.initialize(this, "YOUR_API_KEY");
+    }
+
+}
+
+```
