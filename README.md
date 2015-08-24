@@ -19,3 +19,10 @@ dependencies {
     ...
 }
 ```
+
+Add the INTERNET permission to your AndroidManifest.xml, inside the `<manifest>`
+tag but outside the `<application>` tag:
+
+```XML
+    <uses-permission android:name="android.permission.INTERNET" />
+```
