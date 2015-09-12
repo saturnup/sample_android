@@ -15,7 +15,7 @@ Add the Saturnup SDK as a dependency:
 ```Gradle
 dependencies {
     ...
-    compile 'com.saturnup:sdk:0.1.0'
+    compile 'com.saturnup:sdk:0.1.2'
     ...
 }
 ```
@@ -29,7 +29,9 @@ tag but outside the `<application>` tag:
 
 Register `QuestionActivity` as an activity inside your `<application>` tag:
 ```XML
-<activity android:name="com.saturnup.sdk.question.QuestionAdActivity" />
+<activity
+  android:name="com.saturnup.sdk.question.QuestionAdActivity"
+  android:theme="@style/Theme.AppCompat.NoActionBar" />
 ```
 
 Initialize the Saturnup SDK before you show any ads. This is most easily done in
