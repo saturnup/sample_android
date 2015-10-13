@@ -15,7 +15,7 @@ Add the Saturnup SDK as a dependency:
 ```Gradle
 dependencies {
     ...
-    compile 'com.saturnup:sdk:0.1.2'
+    compile 'com.saturnup:sdk:0.1.5'
     ...
 }
 ```
